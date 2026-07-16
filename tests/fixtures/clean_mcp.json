@@ -1,0 +1,14 @@
+{
+  "tools": [
+    {
+      "name": "get_weather",
+      "description": "Return the current weather for a named city using a local offline dataset.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "city": {"type": "string"}
+        }
+      }
+    }
+  ]
+}

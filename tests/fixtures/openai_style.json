@@ -1,0 +1,15 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "search_docs",
+      "description": "Search the internal documentation index for relevant pages.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string"}
+        }
+      }
+    }
+  }
+]

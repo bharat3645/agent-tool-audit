@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-tool-audit"
+version = "0.1.0"
+description = "Offline static analyzer for AI agent tool/function definitions -- flags prompt-injection-susceptible descriptions and schema hygiene issues."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Bharat Singh Parihar" }]
+keywords = ["ai-agents", "mcp", "prompt-injection", "security", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Security",
+  "Environment :: Console",
+]
+
+[project.scripts]
+agent-tool-audit = "agent_tool_audit.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bharat3645/agent-tool-audit"
+Issues = "https://github.com/bharat3645/agent-tool-audit/issues"
+
+[tool.setuptools.packages.find]
+include = ["agent_tool_audit*"]
